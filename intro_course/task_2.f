@@ -1,4 +1,4 @@
-c     2011 (CC0) Bartosz Szczesny <bszcz@bszcz.eu>
+c     Copyright 2011 Bartosz Szczesny <bszcz@bszcz.eu> {bszcz.eu/license/MIT}
 
       program task_2
       implicit none
