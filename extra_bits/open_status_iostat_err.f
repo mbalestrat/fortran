@@ -1,4 +1,5 @@
-c     Copyright 2012 Bartosz Szczesny <bszcz@bszcz.eu> {bszcz.eu/license/MIT}
+c     Copyright (c) 2012 Bartosz Szczesny
+c     LICENSE: The MIT License (MIT)
 
       program open_status_iostat_err
       integer ierr
