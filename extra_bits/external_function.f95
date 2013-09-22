@@ -14,8 +14,8 @@ program external_function
     stop
 end program
 
-function cube( x )
-    real :: x, cube
+real function cube( x )
+    real :: x
     cube = x**3
     return
 end function
