@@ -10,11 +10,11 @@ program rand_iseed
     real :: x
 
     do i = 1, nseed
-        print "( A, I5 )", "iseed = ", iseed
+        print "( a, i5 )", "iseed = ", iseed
         x = rand( iseed )
         do j = 1, nrand
             x = rand()
-            print "( A, F6.4 )", "rand() = ", x
+            print "( a, f6.4 )", "rand() = ", x
         enddo
     enddo
 

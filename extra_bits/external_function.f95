@@ -9,7 +9,7 @@ program external_function
     end interface
 
     real :: x = 4
-    print "(F4.1, A, F4.1)", x, "**3 = ", cube( x )
+    print "( f4.1, a, f4.1 )", x, "**3 = ", cube( x )
 
     stop
 end program

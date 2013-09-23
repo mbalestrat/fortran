@@ -6,12 +6,12 @@ program character_arrays
     integer :: i
 
     do i = 1, 3
-        write ( *, fmt = "( A, I1, A )", advance = 'no' ) "Enter name ", i, ": "
+        write ( *, fmt = "( a, i1, a )", advance = 'no' ) "Enter name ", i, ": "
         read *, names( i )
     enddo
 
     do i = 1, 3
-        print "( A, I1, A, A )", "names( ", i ," ) = ", names( i )
+        print "( a, i1, a, a )", "names( ", i ," ) = ", names( i )
     enddo
 
     stop
