@@ -14,7 +14,7 @@ program data_at_compile_time
 
     ! the code below is not an infinite loop
     ! "data j / 1 /" statement is done once
-    do while ( j .lt. 4 )
+    do while ( j < 4 )
         data j / 1 /
         print *,"j =", j
         j = j + 1
