@@ -14,27 +14,27 @@ program task_2
     NY = CY - RY
     RCT = ( CT - RT ) / NY
 
-    if ( RCT .gt. +0.1 ) then
+    if ( RCT > +0.1 ) then
         print *, "global warming"
     endif
-    if ( RCT .lt. -0.1 ) then
+    if ( RCT < -0.1 ) then
         print *, "global cooling"
     endif
 
-    if ( RCT .eq.  0.0 ) then
+    if ( RCT == 0.0 ) then
         print *, "no climate change"
     else
-        if ( ( RCT .ge. -0.1 ) .and. ( RCT .le. +0.1 ) ) then
-            if ( ( CCO2 .lt. CRTCO2 ) .and. ( CSUL .lt. CRTSUL ) ) then
+        if ( ( RCT >= -0.1 ) .and. ( RCT <= +0.1 ) ) then
+            if ( ( CCO2 < CRTCO2 ) .and. ( CSUL < CRTSUL ) ) then
                 print *, "climate change not iminent"
             else
-                if ( ( CCO2 .gt. CRTCO2 ) .and. ( CSUL .gt. CRTSUL ) ) then
+                if ( ( CCO2 > CRTCO2 ) .and. ( CSUL > CRTSUL ) ) then
                     print *, "cannot predict"
                 else
-                    if ( CCO2 .gt. CRTCO2 ) then
+                    if ( CCO2 > CRTCO2 ) then
                         print *, "global warming likely"
                     endif
-                    if ( CSUL .gt. CRTSUL ) then
+                    if ( CSUL > CRTSUL ) then
                         print *, "global cooling likely"
                     endif
                 endif
